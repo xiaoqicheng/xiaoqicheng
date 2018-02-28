@@ -19,6 +19,10 @@ class LoginController extends Controller
     |
     */
 
+     /*
+     * 前后台分别注销
+     */
+
     use AuthenticatesUsers, AuthenticatesLogout {
         AuthenticatesLogout::logout insteadof AuthenticatesUsers;
     }
